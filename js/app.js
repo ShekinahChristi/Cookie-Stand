@@ -57,3 +57,32 @@ const lima = {
     return Math.floor(Math.random() * (this.maxCustomers - this.minCustomers + 1) + this.minCustomers);
   }
 };
+
+function cookieCount(city) {
+  let h2 = document.createElement('h2');
+  h2.innerText = city.name;
+  let main = document.getElementById('cities');
+  main.appendChild(h2);
+  let ul = document.createElement('ul');
+  main.appendChild(ul);
+  let totalSales = 0;
+  for (let i = 0; i < hoursOpen.length; i++) {
+    let li = document.createElement('li');
+    let hourlySales = Math.floor(
+      city.getRandomCustomers() * city.avgCookies
+    );
+    totalSales += hourlySales;
+    console.log(totalSales);
+    li.innerText = `${hoursOpen[i]}: ${hourlySales} cookies`;
+    ul.appendChild(li);
+  }
+  let total = document.createElement('li');
+  total.innerText = `Total: ${totalSales} cookies`;
+  ul.appendChild(total);
+}
+
+cookieCount(seattle);
+cookieCount(tokyo);
+cookieCount(dubai);
+cookieCount(paris);
+cookieCount(lima);
