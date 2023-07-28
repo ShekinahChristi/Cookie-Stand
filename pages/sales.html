@@ -12,12 +12,64 @@
   </header>
 </head>
 <body>
-  <main id="cities"></main>
-</body>
+  <main>
+  <section id="cities">
 <script src="../js/app.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+      <div id="logo">
+        <img src="../img/salmon.png" alt="Picture of a salmon" />
+      </div>
+    </nav>
+  </header>
+      <form id="locationAdditionForm">
+        <fieldset>
+          <legend>Location Addition Form</legend>
+          <label for="cityLocation">Enter City</label>
+          <input type="text" name="cityLocation" id="cityLocation" required />
+          <label for="minCust">Minimum Sales</label>
+          <input
+            type="number"
+            min="0"
+            max="999"
+            name="minCust"
+            id="minCust"
+            required
+            step="0.1"
+          />
+          <label for="maxCust">Maximum Sales</label>
+          <input
+            type="number"
+            min="0"
+            max="999"
+            name="maxCust"
+            id="maxCust"
+            required
+            step="0.1"
+          />
+          <label for="avgSales">Average Cookie Sales</label>
+          <input
+            type="number"
+            min="0"
+            max="999"
+            name="avgSales"
+            id="avgSales"
+            required
+            step="0.1"
+          />
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+    <div>
+      <img src="../img/family.jpg" alt="familyPhoto" />
+    </div>
+  </main>
+  <footer></footer>
+</body>
 </html>
-
-
-
 
 

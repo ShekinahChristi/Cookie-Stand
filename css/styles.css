@@ -1,0 +1,32 @@
+@import url(https://fonts.google.com/specimen/Anton?preview.size=22);
+
+h1{ text-align: center;
+  font-family:san-seriff;
+}
+
+
+
+#siteImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 10px;
+  border-bottom: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  border-color: black;
+  border-style: double;
+}
+
+
+nav li a{
+  background-color: rgb(255, 51, 0);
+  font-size: large;
+  font-weight: 400;
+  cursor: pointer;
+  list-style: position;
+
+}
+
+
+
